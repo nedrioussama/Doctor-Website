@@ -1,6 +1,6 @@
-# Site vitrine - Ghofrane . ., Orthoptiste
+# Site vitrine - Ghofrane, Orthoptiste
 
-Site statique (HTML/CSS/JS) pour le cabinet d'orthoptie de Ghofrane . . ., Bardo, Tunis.
+Site statique (HTML/CSS/JS) pour le cabinet d'orthoptie de Ghofrane, Bardo, Tunis.
 
 ## Structure du projet
 

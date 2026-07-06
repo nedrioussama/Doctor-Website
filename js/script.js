@@ -1,17 +1,16 @@
-  // Mobile menu toggle
+  // Menu mobile : on pilote uniquement la liste (ul) via une classe,
+  // jamais toute la balise nav, pour ne pas casser l'affichage desktop.
   const menuToggle = document.getElementById('menu-toggle');
   const navMenu = document.getElementById('nav-menu');
+  const navList = navMenu.querySelector('ul');
+
   menuToggle.addEventListener('click', () => {
-    const isOpen = navMenu.style.display === 'block';
-    navMenu.style.display = isOpen ? 'none' : 'block';
-    if (!isOpen) {
-      navMenu.querySelector('ul').style.cssText = 'display:flex;flex-direction:column;gap:16px;position:absolute;top:100%;left:0;right:0;background:#FBFCFD;padding:20px 32px;border-bottom:1px solid #DDE8EC;';
-    }
+    navList.classList.toggle('is-open');
   });
 
-  // Close mobile menu on link click
-  document.querySelectorAll('#nav-menu a').forEach(link => {
-    link.addEventListener('click', () => { navMenu.style.display = 'none'; });
+  // Fermer le menu mobile apres un clic sur un lien
+  navList.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => { navList.classList.remove('is-open'); });
   });
 
   // Contact form : traitement provisoire (site statique, pas encore de backend)

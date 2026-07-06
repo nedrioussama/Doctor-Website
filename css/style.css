@@ -84,6 +84,11 @@
     gap: 36px;
   }
 
+  /* Menu mobile : cache par defaut, affiche via la classe .is-open (voir media query plus bas) */
+  nav ul.is-open {
+    display: flex;
+  }
+
   nav a {
     font-size: 14.5px;
     font-weight: 500;
@@ -518,6 +523,18 @@
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .hero h1 { font-size: 36px; }
     nav ul { display: none; }
+    nav ul.is-open {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--bg);
+      padding: 20px 32px;
+      border-bottom: 1px solid var(--line);
+    }
     .menu-toggle { display: block; }
     .nav-cta { display: none; }
   }

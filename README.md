@@ -6,12 +6,12 @@ Site statique (HTML/CSS/JS) pour le cabinet d'orthoptie de Ghofrane . . ., Bardo
 
 ```
 site-ghofrane/
-├── index.html          -> page principale (Accueil, A propos, Services, Contact)
+├── index.html         
 ├── css/
-│   └── style.css       -> tous les styles
+│   └── style.css       
 ├── js/
-│   └── script.js        -> menu mobile + gestion du formulaire de contact
+│   └── script.js        
 ├── images/
-│   └── README.txt       -> a remplacer par les vraies images (portrait, logo)
-└── README.md             -> ce fichier
+│   └── README.txt       
+└── README.md           
 ``
